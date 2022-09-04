@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>寻路算法</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header__item">
+        算法：
+        <label for="breadth">
+          <input class="algorithm" type="radio" name="radio1" id="breadth">广度优先算法
+        </label>
+        <label for="dijkstra">
+          <input class="algorithm" type="radio" name="radio1" id="dijkstra">Dijkstra算法
+        </label>
+        <label for="greedy">
+          <input class="algorithm" type="radio" name="radio1" id="greedy">贪婪算法
+        </label>
+        <label for="astar">
+          <input checked class="algorithm" type="radio" name="radio1" id="astar">A Star算法
+        </label>
+      </div>
+      <div class="header__item">
+        是否显示搜索过程：
+        <label for="yes">
+          <input checked class="search-step" type="radio" name="radio2" id="yes">是
+        </label>
+        <label for="no">
+          <input class="search-step" type="radio" name="radio2" id="no">否
+        </label>
+      </div>
+    </div>
+    <div id="map" class="map">
+      <div class="map__item"></div>
+    </div>
+    <div class="tools">
+      <button id="reset-map">重新生成地图</button>
+    </div>
+
+    <div class="color">
+      <div class="color__item">
+        <span class="value start"></span>
+        <span class="name">起点</span>
+      </div>
+      <div class="color__item">
+        <span class="value end"></span>
+        <span class="name">终点</span>
+      </div>
+      <div class="color__item">
+        <span class="value searched"></span>
+        <span class="name">寻找过的点</span>
+      </div>
+      <div class="color__item">
+        <span class="value road"></span>
+        <span class="name">路径</span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
