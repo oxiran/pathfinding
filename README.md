@@ -5,4 +5,8 @@
 包括 ***AStar***、***Breadth First Search***、***Dijkstra*** 等算法。
 
 ### 运行
-```npm run serve```
+```
+npm install
+
+npm run serve
+```
