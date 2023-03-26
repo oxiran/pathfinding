@@ -4,7 +4,8 @@
   "description": "Pathfinding algorithm based on javascript.",
   "main": "src/index.js",
   "scripts": {
-    "serve": "webpack-dev-server --config webpack.config.js --stats errors-only"
+    "serve": "webpack-dev-server --config webpack.config.js --stats errors-only",
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [
     "pathfinding",
